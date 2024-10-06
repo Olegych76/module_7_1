@@ -16,7 +16,7 @@ class Shop:
 
     def __init__(self):
         if not os.path.exists(self.__file_name):  # Если файл не существует, создаем его
-            file = open(self.__file_name, 'w')
+            file = open(self.__file_name, 'x')
             file.close()
 
     def get_products(self):  # Запрашиваем список товаров из файла
